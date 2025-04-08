@@ -1,57 +1,85 @@
-
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casa Barnaba</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f6f3e7;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .card {
-            background-color: white;
-            border: 2px solid #ddd;
-            padding: 20px;
-            border-radius: 10px;
-            max-width: 400px;
-            text-align: center;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        .card img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-        }
-        .info {
-            margin-top: 15px;
-            font-size: 16px;
-        }
-        .info b {
-            display: inline-block;
-            width: 80px;
-        }
-        .email {
-            color: #0066cc;
-            text-decoration: none;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Casa Barnaba - Biglietto da Visita</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Georgia', serif;
+      background-color: #f5f0e6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .business-card {
+      background-color: #fffdf6;
+      border-radius: 12px;
+      padding: 30px 40px;
+      width: 500px;
+      max-width: 90%;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border: 1px solid #dcd2be;
+      position: relative;
+      font-size: 16px;
+      color: #1c2b24;
+    }
+    .logo {
+      text-align: center;
+    }
+    .logo img {
+      width: 140px;
+      height: auto;
+    }
+    h1 {
+      text-align: center;
+      color: #1c2b24;
+      font-size: 32px;
+      margin: 10px 0 25px;
+    }
+    .info {
+      display: grid;
+      grid-template-columns: 100px 1fr;
+      row-gap: 12px;
+      column-gap: 10px;
+    }
+    .info div {
+      line-height: 1.4;
+    }
+    .qr {
+      position: absolute;
+      bottom: 25px;
+      right: 25px;
+    }
+    .qr img {
+      width: 90px;
+    }
+    a {
+      color: #1c2b24;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
-
-<div class="card">
-    <img src="casa_barnaba.png" alt="Biglietto da visita Casa Barnaba">
-    <div class="info">
-         <p><strong>📍 Indirizzo:</strong> <a href="https://maps.app.goo.gl/4U7Yq3XhSB4R7RH66?g_st=com.google.maps.preview.copy" target="_blank">44°12'04.2"N 10°33'22.6"E</a></p>
-        <p><strong>☎️  Telefono:</strong> <a href="tel:+393474979912">347 4979912</a></p>
-        <p><strong>💌 Email:</strong> <a href="mailto:Casa.Barnaba@outlook.it">Casa.Barnaba@outlook.it</a></p>
+  <div class="business-card">
+    <div class="logo">
+      <img src="cabin_icon.png" alt="Logo Casa Barnaba" />
     </div>
-</div>
-
+    <h1>CASA BARNABA</h1>
+    <div class="info">
+      <div><strong>Indirizzo</strong></div>
+      <div><a href="https://maps.app.goo.gl/4U7Yq3XhSB4R7RH66?g_st=com.google.maps.preview.copy" target="_blank">44°12'04.2"N 10°33'22.6"E</a></div>
+      <div><strong>Telefono</strong></div>
+      <div><a href="tel:+393474979912">347 4979912</a></div>
+      <div><strong>E-mail</strong></div>
+      <div><a href="mailto:Casa.Barnaba@outlook.it">Casa.Barnaba@outlook.it</a></div>
+    </div>
+    <div class="qr">
+      <img src="qr_code.png" alt="QR Code" />
+    </div>
+  </div>
 </body>
 </html>
